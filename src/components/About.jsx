@@ -23,7 +23,7 @@ const About = () => {
                 <div className="flex-1 flex flex-col gap-8 ">
                     {isDesktop && <h3 className="text-h3 text-secondary font-header leading-tight">DOŚWIADCZONY W → </h3>}
                     <div className="flex flex-col gap-4">
-                        <h2 className="text-h2 text-text font-header leading-tight">O MNIE</h2>
+                        <h3 className="text-h3 text-text font-header leading-tight">O MNIE</h3>
                         <p className="text-body text-text max-w-[700px] md:w-3/4 leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
                     </div>
                     {isMobile && <h3 className="text-h3 text-secondary font-header leading-tight">DOŚWIADCZONY W ↓ </h3>}
@@ -55,8 +55,8 @@ const About = () => {
             </section>
             {logoClicked && (
                 <div onClick={handleLogoClick} className="fixed inset-0 flex items-center justify-center  bg-black/50 z-10 p-4" >
-                    <div className=" border-2  border-secondary bg-black/50 backdrop-blur-sm p-4 py-8 flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg  w-full md:w-3/4 lg:w-[700px]">
-                        <h3 className="text-3xl font-bold font-header text-secondary ">{logoTitle}</h3>
+                    <div className=" border-2  border-secondary bg-black/50 backdrop-blur-sm text-center  px-2 md:px-8  py-8 flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg  w-full md:w-3/4 lg:w-[700px]">
+                        <h3 className="text-3xl font-bold font-header text-justify  text-secondary ">{logoTitle}</h3>
                         <p className="text-body font-primary md:w-3/4  text-white">{logoDesc}</p>
                         <Button type="wyjdz" />
                     </div>

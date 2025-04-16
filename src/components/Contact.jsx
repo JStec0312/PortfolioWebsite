@@ -68,7 +68,7 @@ const Contact = () => {
 
       <form  className="flex flex-col  flex-1 w-full  lg:max-w-[700px] items-start gap-4 justify-around "> 
 
-        <input type="text" placeholder="Imię" className="  outline-none leading-0 text-secondary placeholder-secondary border-b-2  border-white w-full pb-1 font-bold" />
+        <input type="text" placeholder="Imię" className="  outline-none leading-0 text-secondary  placeholder-secondary border-b-2   border-white w-full pb-1 font-bold" />
         <input type="text" placeholder="Email" className="  outline-none leading-0 text-secondary placeholder-secondary border-b-2  border-white w-full pb-1 font-bold" />
         <input type="email" placeholder="Temat" className="outline-none text-secondary placeholder-secondary border-b-2 border-white font-bold w-full  pb-1"/>
         <textarea placeholder="Zostaw wiadomość" className="outline-none  min-h-[130px] text-sm w-full border-2 mt-2 border-white rounded-sm p-2 " />

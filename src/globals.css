@@ -1,4 +1,6 @@
-@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
 @keyframes marquee {
   0% {
     transform: translateX(-100%);
@@ -83,7 +85,6 @@
     transform: translateX(-50%);
   }
 }
-
 
 
 

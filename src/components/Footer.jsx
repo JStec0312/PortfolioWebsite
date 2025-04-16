@@ -49,7 +49,7 @@ export default function Footer() {
 
               {/* Navigation section */}
               <div className="col-span-1  mr-auto">
-                <h3 className="font-body font-semibold text-white text-base leading-none">
+                <h3 className="font-body font-semibold text-white text-xl leading-none">
                   Navigation
                 </h3>
                 <nav className="mt-4">
@@ -58,8 +58,8 @@ export default function Footer() {
                       <li key={index}>
                         <button
                           href={link.href}
-                          className="font-body text-[#888888] text-sm leading-[21px] hover:text-white transition-colors"
-                        >
+                          className="font-body  text-[#888888] text-md leading-[22px] m-0 hover:text-white transition-colors "
+                        > 
                           {link.title}
                         </button>
                       </li>
@@ -68,8 +68,8 @@ export default function Footer() {
                 </nav>
               </div>
             {/* Social media section */}
-                <div className="col-span-1 flex flex-col md:ml-auto mr-auto items-baseline">
-                    <h3 className="font-body font-semibold text-white mb-4 text-base leading-none w-fit">
+                <div className="col-span-1  flex flex-col md:ml-auto mr-auto  items-baseline">
+                    <h3 className="font-body font-semibold text-white mb-4 text-xl leading-none w-fit">
                     Social Media
                     </h3>
                     <div>
@@ -77,7 +77,7 @@ export default function Footer() {
                         {socialLinks.map((link, index) => (
                         <li key={index}>
                             <a href={link.href} className="flex flex-row gap-2  items-center">
-                            <span className="font-body text-[#888888] text-sm leading-[21px] hover:text-white transition-colors">{link.name}</span>
+                            <span className="font-body text-[#888888] text-md leading-[22px] hover:text-white transition-colors">{link.name}</span>
                             {link.icon}
                             </a>
                         </li>
@@ -88,7 +88,7 @@ export default function Footer() {
                 </div>
               {/* Services section */}
               <div className="col-span-1  md:ml-auto">
-                <h3 className="font-body font-semibold text-white text-base leading-none">
+                <h3 className="font-body font-semibold text-white text-xl leading-none">
                   Usługi
                 </h3>
                 <div className="mt-4">
@@ -96,7 +96,7 @@ export default function Footer() {
                     {servicesLinks.map((link, index) => (
                       <li key={index } > 
                         <p 
-                          className="font-body cursor-pointer text-[#888888] text-sm leading-[none] hover:text-white transition-colors"
+                          className="font-body cursor-pointer text-[#888888] text-md leading-[22px] hover:text-white transition-colors"
                         >
                           {link.title}
                         </p>
@@ -107,25 +107,17 @@ export default function Footer() {
               </div>
 
               {/* Newsletter section */}
-              <div className="col-span-1 flex md:ml-auto flex-col items-baseline">
-                <h3 className="font-body font-semibold text-white mb-4 text-base leading-none w-fit">
+              <div className="col-span-1  md:ml-auto  ">
+                <h3 className="font-body font-semibold text-white mb-4 text-xl leading-none w-fit">
                     Kontakt
                 </h3>
-                <a href="tel:+48570660663" className=" font-body text-[#888888] text-sm leading-[22.4px] flex w-fit">
-                  +48 570 660 663
-                </a>
-                <a href="mailto:j.stec0312@gmail.com" className=" font-body text-[#888888] text-sm leading-[22.4px] flex w-fit">
-                    j.stec0312@gmail.com
-                </a>
-                <div className="mt-6 space-y-3">
-                  {/* <Input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="h-[47px] bg-[#111111] border-[#333333] text-black font-['Montserrat-Regular',Helvetica] text-sm"
-                  />
-                  <Button className="w-full h-[45px] bg-[#d5f60c] hover:bg-[#c2e00b] text-black font-['Montserrat-Medium',Helvetica] text-sm">
-                    Subscribe
-                  </Button> */}
+                <div className="mt-4 space-y-4">
+                  <a href="tel:+48570660663" className="  font-body text-[#888888] hover:text-white transition-colors  text-md leading-[22px] ">
+                    +48 570 660 663
+                  </a>
+                  <a href="mailto:j.stec0312@gmail.com" className=" font-body text-[#888888] text-md mt-4  hover:text-white transition-colors leading-[22px] flex w-fit">
+                      j.stec0312@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
@@ -133,15 +125,15 @@ export default function Footer() {
             {/* Footer bottom */}
             <div className="mt-8 flex flex-col md:flex-row md:justify-between">
               <div className="flex flex-col md:flex-row md:space-x-10 space-y-2 md:space-y-0">
-                <p className="font-['Montserrat-Regular',Helvetica] text-[#888888] text-sm leading-[21px]">
+                <p className="font-['Montserrat-Regular',Helvetica] text-[#888888] text-sm leading-[22px]">
                   © 2024 Jakub Stec. Wszystkie prawa zastrzeżone.
                 </p>
               </div>
               <div className="mt-4 md:mt-0 text-right">
-                <p className="font-['Montserrat-Regular',Helvetica] text-[#888888] text-sm leading-[21px]">
+                <p className="font-['Montserrat-Regular',Helvetica] text-[#888888] text-sm leading-[22px] ">
                   j.stec0312@gmail.com
                 </p>
-                <p className="font-['Montserrat-Regular',Helvetica] text-[#888888] text-sm leading-[21px]">
+                <p className="font-['Montserrat-Regular',Helvetica] text-[#888888] text-sm leading-[22px]">
                   Pabianice, Polska
                 </p>
               </div>

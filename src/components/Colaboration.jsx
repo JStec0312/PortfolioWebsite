@@ -65,7 +65,7 @@ export default function InteractiveMap() {
           className="flex flex-col items-center gap-4 mt-8   text-center"
         >
           <p className="text-h3 text-white font-semibold font-header leading-none">{steps[activeStep].title}</p>
-          <p className="text-body lg:text-2xl text-white/70 max-w-xl font-body mt-">{steps[activeStep].desc}</p>
+          <p className="text-body lg:text-2xl text-white/70 max-w-xl font-body m">{steps[activeStep].desc}</p>
 <img
   src={steps[activeStep].image}
   alt={steps[activeStep].title}
