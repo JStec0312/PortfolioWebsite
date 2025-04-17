@@ -19,12 +19,18 @@ const About = () => {
     }
     return(
         <>
-            <section className="flex  flex-col lg:flex-row gap-10 lg:items-center ">
-                <div className="flex-1 flex flex-col gap-8 ">
+            <section id="o-mnie" className="flex py-4 flex-col  lg:flex-row gap-10 lg:items-center  ">
+                <div className="flex-1 flex flex-col gap-8 items-between justify-between  h-full">
                     {isDesktop && <h3 className="text-h3 text-secondary font-header leading-tight">DOŚWIADCZONY W → </h3>}
-                    <div className="flex flex-col gap-4">
-                        <h3 className="text-h3 text-text font-header leading-tight">O MNIE</h3>
-                        <p className="text-body text-text max-w-[700px] md:w-3/4 leading-relaxed">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+                    <div className="flex flex-col gap-4 ">
+                        <h3 className="text-h3 text-text font-header leading-tight ">O MNIE</h3>
+                        <p className="text-body text-text max-w-[700px] md:w-3/4 leading-relaxed">Stawiam na przejrzystość i prostotę – zarówno w kodzie, jak i w komunikacji z klientem.
+
+Zaczynam od poznania Twoich potrzeb, potem projektuję w Figmie, konsultuję z Tobą, i dopiero wtedy siadam do kodu.
+
+Korzystam z narzędzi, które przyspieszają pracę i dają nowoczesny efekt: React, Tailwind, Node.js, PostgreSQL.
+
+Każda strona, którą robię, jest responsywna, zoptymalizowana i gotowa do działania na każdej platformie.</p>
                     </div>
                     {isMobile && <h3 className="text-h3 text-secondary font-header leading-tight">DOŚWIADCZONY W ↓ </h3>}
             

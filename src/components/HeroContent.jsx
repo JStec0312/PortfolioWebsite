@@ -6,7 +6,7 @@ const HeroContent = () => {
             <div className="flex w-full gap-6 flex-col flex-1 ">
                 <div className="flex flex-col gap-4  md:min-w-[450px] lg:min-w-[600px] xl:w-3/4">
                     <h1 className="text-h1 w-full text-text font-header leading-tight ">TWORZĘ NOWOCZESNE STRONY <span className="text-secondary">INTERNETOWE</span></h1>
-                    <p className="text-body w-full text-text  ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+                    <p className="text-body w-full text-text  ">Jestem studentem informatyki i zajmuję się tworzeniem nowoczesnych stron internetowych. Łączę estetykę z funkcjonalnością, oferując solidne rozwiązania w przystępnych cenach – idealne dla małych firm, freelancerów i każdego, kto chce się wyróżnić w sieci.</p>
                 </div>
                 <div className="flex flex-row items-center w-full gap-4 flex-wrap">
                     <Button type="kontakt"/>

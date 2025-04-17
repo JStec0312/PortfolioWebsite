@@ -10,10 +10,20 @@ const Navbar = () => {
 
                 {/* Desktop menu */}
                 <ul className="hidden md:flex gap-6 text-[30px]">
-                    <li className="cursor-pointer text-text hover:text-secondary transition">O mnie</li>
-                    <li className="cursor-pointer text-text hover:text-secondary transition">PORTFOLIO</li>
-                    <li className="cursor-pointer text-text hover:text-secondary transition">KONTAKT</li>
-                </ul>
+                    <li>
+                        <a href="#o-mnie" className="cursor-pointer text-text hover:text-secondary transition">O mnie</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" className="cursor-pointer text-text hover:text-secondary transition">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#wspolpraca" className="cursor-pointer text-text hover:text-secondary transition">WSPÓŁPRACA</a>
+                    </li>
+                    <li>
+                        <a href="#kontakt" className="cursor-pointer text-text hover:text-secondary transition">KONTAKT</a>
+                    </li>
+            </ul>
+
 
                 {/* Hamburger */}
                     <button onClick={() => setIsOpen(!isOpen)} className="md:hidden flex items-center justify-center ">
@@ -32,11 +42,21 @@ const Navbar = () => {
                 className={`w-full overflow-hidden transition-all duration-300 ease-in-out bg-background text-text md:hidden
                 ${isOpen ? "max-h-[500px] py-4" : "max-h-0 py-0"}
             `}>
-                <ul className="flex flex-col  gap-4 border-t-2 border-secondary pt-4">
-                    <li className="cursor-pointer text-2xl hover:text-secondary transition">O mnie</li>
-                    <li className="cursor-pointer text-2xl hover:text-secondary transition">PORTFOLIO</li>
-                    <li className="cursor-pointer text-2xl hover:text-secondary transition">KONTAKT</li>
+                <ul className="flex flex-col gap-4 border-t-2 border-secondary pt-4">
+                    <li>
+                        <a href="#o-mnie" className="cursor-pointer text-2xl hover:text-secondary transition">O mnie</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" className="cursor-pointer text-2xl hover:text-secondary transition">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#wspolpraca" className="cursor-pointer text-2xl hover:text-secondary transition">WSPÓŁPRACA</a>
+                    </li>
+                    <li>
+                        <a href="#kontakt" className="cursor-pointer text-2xl hover:text-secondary transition">KONTAKT</a>
+                    </li>
                 </ul>
+
             </div>
         </nav>
     );

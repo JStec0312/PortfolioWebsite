@@ -36,8 +36,8 @@ export default function InteractiveMap() {
   const [activeStep, setActiveStep] = useState(0)
 
   return (
-    <section className="flex flex-col gap-8">
-      <h2 className="font-header text-h2 self-start text-white text-center">Przebieg współpracy</h2>
+    <section id="wspolpraca" className="flex flex-col gap-8">
+      <h2 className="font-header text-h3 self-start text-white text-center">Przebieg współpracy</h2>
 
       <div   className="flex justify-between gap-2 flex-nowrap md:gap-4">
         {steps.map((step, index) => (
