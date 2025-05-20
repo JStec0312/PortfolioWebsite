@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js and TailwindCSS. This portfolio showcases skills, projects, and contact information with a beautiful user interface and smooth animations.
 
-![Portfolio Preview](/public/images/hero.png)
+#Previev https://portfolio-website-eight-ashy-33.vercel.app
 
 ## Features
 
