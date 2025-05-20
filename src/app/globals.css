@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --text-body:16px;
+  --text-marquee: 50px;
+  --text-h1: clamp(3rem, 6vw, 5.5rem);
+--text-h2: clamp(2.5rem, 5vw, 4.5rem);
+--text-h3: clamp(2rem, 4vw, 3.5rem);
+}
+@media(min-width: 768px) {
+  :root {
+    --text-body: 18px;
+    --text-h1: 4rem;
+    --text-marquee: 60px;
+
+  }
+}
+@media(min-width:1280px) {
+  :root {
+    --text-h1:5.5rem;
+    --text-marquee: 100px;
+  }
+}
+
+@theme{
+  --font-header: 'Bebas Neue', sans-serif;
+  --font-main: 'Montserrat', sans-serif;
+  --color-secondary:#D5F60C !important;
+  --color-primary: #000000;
+  --color-text:#FFFAFA;
+  --text-h3:2rem;
+  --text-body:var(--text-body);
+  --text-h1:6rem;
+  --text-h2:rem;
+  --text-button: 16px;
+  --text-marquee: var(--text-marquee);
+  --p0: 0;
+  --p1: 0.25rem;  /* 4px */
+  --p2: 0.5rem;   /* 8px */
+  --p3: 1rem;     /* 16px */
+  --p4: 1.5rem;   /* 24px */
+  --p5: 2rem;     /* 32px */
+  --p6: 3rem;     /* 48px */
+  --p7: 4rem;     /* 64px */
+}
+
+
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
+}
+
+.marquee-track span {
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 1px #D5F60C;
+  padding-right: 2rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
