@@ -27,7 +27,7 @@ export default function Background() {
             color: 0x0,
             waveSpeed: 0.60,
             zoom: 0.35,
-            shininess: 30.00,
+            shininess: 10.00,
           });
         }
 

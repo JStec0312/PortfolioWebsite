@@ -41,7 +41,7 @@ export default function ClientApp() {
   }
 
   return (
-    <main className="flex flex-col gap-5 font-main px-4 pt-4 md:px-8">
+    <main className="flex flex-col gap-5 font-main px-4 pt-4 md:px-8 max-w-[1600px] mx-auto">
       <Background />
       <Hero />
       <Label />
