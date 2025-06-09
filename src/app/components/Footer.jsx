@@ -37,7 +37,7 @@ export default function Footer() {
         <footer className="  border-[#222222]  pb-8">
           <div className=" ">
             {/* Main footer content */}
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 pb-8 border-b-[0.8px] w-full  border-[#222222]">
+            <div className="flex flex-row flex-wrap md:grid md:grid-cols-5 gap-4 md:gap-8 pb-8 border-b-[0.8px] w-full  border-[#222222]">
               {/* Brand section */}
               <div className="col-span-1 w-fit">
                 <h3 className="font-header text-white leading-none text-4xl tracking-wide">
@@ -45,6 +45,7 @@ export default function Footer() {
                 </h3>
                 
               </div>
+              <div className="w-full"></div>
 
               {/* Navigation section */}
               <div className="col-span-1  mr-auto">
