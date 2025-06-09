@@ -9,10 +9,10 @@ const Navbar = () => {
                 <h3 className="text-text text-[30px]">Jakub Stec</h3>
 
                 {/* Desktop menu */}
-                <ul className="hidden md:flex gap-6 text-[30px]">
-                    <li className="cursor-pointer text-text hover:text-secondary transition">O mnie</li>
-                    <li className="cursor-pointer text-text hover:text-secondary transition">PORTFOLIO</li>
-                    <li className="cursor-pointer text-text hover:text-secondary transition">KONTAKT</li>
+                <ul className="hidden self-center   md:flex gap-6 text-[30px]">
+                    <li className="cursor-pointer text-text hover:text-secondary transition"><a href="#About">O mnie</a></li>
+                    <li className="cursor-pointer text-text hover:text-secondary transition"><a href="#Portfolio">PORTFOLIO</a></li>
+                    <li className="cursor-pointer text-text hover:text-secondary transition"><a href="#Kontakt">KONTAKT</a></li>
                 </ul>
 
                 {/* Hamburger */}
@@ -33,9 +33,9 @@ const Navbar = () => {
                 ${isOpen ? "max-h-[500px] py-4" : "max-h-0 py-0"}
             `}>
                 <ul className="flex flex-col  gap-4 border-t-2 border-secondary pt-4">
-                    <li className="cursor-pointer text-2xl hover:text-secondary transition">O mnie</li>
-                    <li className="cursor-pointer text-2xl hover:text-secondary transition">PORTFOLIO</li>
-                    <li className="cursor-pointer text-2xl hover:text-secondary transition">KONTAKT</li>
+                    <li className="cursor-pointer text-2xl hover:text-secondary transition"><a href="#About">O mnie</a></li>
+                    <li className="cursor-pointer text-2xl hover:text-secondary transition"><a href="#Portfolio">PORTFOLIO</a></li>
+                    <li className="cursor-pointer text-2xl hover:text-secondary transition"><a href="#Kontakt">KONTAKT</a></li>
                 </ul>
             </div>
         </nav>

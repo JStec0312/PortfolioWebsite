@@ -4,10 +4,9 @@ import React from "react";
 export default function Footer() {
   // Navigation links data
   const navigationLinks = [
-    { title: "Home", href: "#" },
-    { title: "About", href: "#" },
-    { title: "Portfolio", href: "#" },
-    { title: "Contact", href: "#" },
+    { title: "O mnie", href: "#About" },
+    { title: "Portfolio", href: "#Portfolio" },
+    { title: "Kontakt", href: "#Kontakt" },
   ];
 
   // Services links data
@@ -21,12 +20,12 @@ export default function Footer() {
   const socialLinks = [
     {
         name:"GitHub",
-        href: "https://github.com",
+        href: "https://github.com/stecuproductions",
         icon: <Github size={18} fill="#D5F60C"  />
     },
     {
         name:"Instagram",
-        href: "https://instagram.com",
+        href: "https://www.instagram.com/stecu03/",
         icon: <Instagram size={18} fill="#D5F60C" />
     }
 
@@ -50,18 +49,18 @@ export default function Footer() {
               {/* Navigation section */}
               <div className="col-span-1  mr-auto">
                 <h3 className="font-body font-semibold text-white text-base leading-none">
-                  Navigation
+                  Nawigacja
                 </h3>
                 <nav className="mt-4">
                   <ul className="space-y-4">
                     {navigationLinks.map((link, index) => (
                       <li key={index}>
-                        <button
+                        <a
                           href={link.href}
                           className="font-body text-[#888888] text-sm leading-[21px] hover:text-white transition-colors"
                         >
                           {link.title}
-                        </button>
+                        </a>
                       </li>
                     ))}
                   </ul>

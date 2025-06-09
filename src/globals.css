@@ -86,8 +86,9 @@
   }
 }
 
-*{
-  scroll-behavior: smooth;
+html, body {
+    scroll-behavior: smooth;
   cursor:pointer !important;
+
 }
 
