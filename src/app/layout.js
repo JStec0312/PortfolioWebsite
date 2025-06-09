@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "Jakub Stec Portfolio",
     images: [
       {
-        url: "/images/hero.webp",
+        url: "/images/META.png",
         width: 1200,
         height: 630,
         alt: "Jakub Stec - Web Developer Portfolio",
