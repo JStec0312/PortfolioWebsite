@@ -20,9 +20,9 @@ export const metadata = {
   creator: "Jakub Stec",
   openGraph: {
     title: "Jakub Stec | Web Developer Portfolio",
-    description: "Jakub Stec Web Developer Portfolio.",,
+    description: "Jakub Stec Web Developer Portfolio.",
     url: "https://portfolio-website-iota-jet.vercel.app",
-    siteName: "Jakub Stec Portfolio",
+    siteName: "Jakub Stec Web Developer Portfolio",
     images: [
       {
         url: "/images/META.png",
