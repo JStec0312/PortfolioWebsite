@@ -16,7 +16,7 @@ const HeroContent = () => {
                 </div>
             </div>
             <div className="flex-1 flex justify-end">
-                <img src="/images/hero.png" className="  h-full max-h-[400px] md:max-h-[600px]  "  alt="hero" />
+                <img src="/images/hero.webp" className="  h-full max-h-[400px] md:max-h-[600px]  "  alt="hero" />
             </div>
         </div>
     )

@@ -38,7 +38,7 @@ export default function ClientApp() {
   useEffect(() => {
     const preloadImages = async () => {
       const sources = [
-        "/images/hero.png",
+        "/images/hero.webp",
         "/images/react.png",
         "/images/next.png",
         "/images/js.png",
