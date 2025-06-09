@@ -14,13 +14,13 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "Jakub Stec | Web Developer Portfolio",
-  description: "Portfolio profesjonalnego web developera specjalizującego się w React, Next.js i nowoczesnych technologiach frontendowych.",
+  description: "Jakub Stec Web Developer Portfolio.",
   keywords: ["web developer", "frontend developer", "React", "Next.js", "portfolio", "Jakub Stec"],
   authors: [{ name: "Jakub Stec", url: "https://www.instagram.com/stecu03/" }],
   creator: "Jakub Stec",
   openGraph: {
     title: "Jakub Stec | Web Developer Portfolio",
-    description: "Portfolio profesjonalnego web developera specjalizującego się w React, Next.js i nowoczesnych technologiach frontendowych.",
+    description: "Jakub Stec Web Developer Portfolio.",,
     url: "https://portfolio-website-iota-jet.vercel.app",
     siteName: "Jakub Stec Portfolio",
     images: [
