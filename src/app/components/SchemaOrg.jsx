@@ -7,14 +7,21 @@ export default function SchemaOrg() {
     "@type": "Person",
     "name": "Jakub Stec",
     "jobTitle": "Web Developer",
-    "url": "https://jakub-stec-portfolio.vercel.app",
+    "url": "https://portfolio-website-iota-jet.vercel.app",
+    "image": "/images/meta.png",
     "sameAs": [
       "https://www.instagram.com/stecu03/",
       "https://www.facebook.com/kuba.stec.106"
     ],
     "email": "j.stec0312@gmail.com",
     "telephone": "+48570660663",
-    "knowsAbout": ["React", "Next.js", "Tailwind CSS", "Web Development", "Frontend Development"],
+    "knowsAbout": [
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Web Development",
+      "Frontend Development"
+    ],
     "hasOccupation": {
       "@type": "Occupation",
       "name": "Web Developer",

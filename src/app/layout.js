@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="canonical" href="https://portfolio-website-iota-jet.vercel.app" />
       </head>
-      <body className="antialiased">
+      <body className="antialiased bg-black -z-20">
         {children}
       </body>
     </html>
