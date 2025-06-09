@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Jakub Stec | Web Developer Portfolio",
     description: "Portfolio profesjonalnego web developera specjalizującego się w React, Next.js i nowoczesnych technologiach frontendowych.",
-    url: "https://jakub-stec-portfolio.vercel.app",
+    url: "https://portfolio-website-iota-jet.vercel.app",
     siteName: "Jakub Stec Portfolio",
     images: [
       {
@@ -37,8 +37,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Jakub Stec | Web Developer Portfolio",
-    description: "Portfolio profesjonalnego web developera specjalizującego się w React, Next.js i nowoczesnych technologiach frontendowych.",
-    images: ["/images/hero.png"],
+    description: "Jakub Stec - Web Developer Portfolio",
   },
   robots: {
     index: true,
@@ -50,8 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl" className={`${bebasNeue.variable} ${montserrat.variable}`}>
       <head>
-        <link rel="canonical" href="https://jakub-stec-portfolio.vercel.app" />
-        <meta name="google-site-verification" content="your-verification-code" />
+        <link rel="canonical" href="https://portfolio-website-iota-jet.vercel.app" />
       </head>
       <body className="antialiased">
         {children}
