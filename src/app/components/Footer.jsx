@@ -32,9 +32,9 @@ export default function Footer() {
   ];
 
   return (
-    <div className=" flex flex-row justify-between md:mt-8 w-full">
+    <div className=" flex flex-row justify-between md:mt-8  w-full">
       <div className="w-full ">
-        <footer className="  border-[#222222] pt-16 pb-8">
+        <footer className="  border-[#222222] pt-8 pb-8">
           <div className=" ">
             {/* Main footer content */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8 pb-8 border-b-[0.8px] w-full  border-[#222222]">
