@@ -23,7 +23,7 @@ export default function Footer() {
   const socialLinks = [
     {
         name:"GitHub",
-        href: "https://github.com/stecuproductions",
+        href: "https://github.com/JStec0312",
         icon: <Github size={18} fill="#D5F60C"  />
     },
     {

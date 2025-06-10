@@ -19,7 +19,7 @@ const HeroContent = () => {
                 </div>
                 <div className="flex flex-row items-center w-full gap-4 flex-wrap">
                     <a href="#Kontakt"><Button type="kontakt"/></a>
-                    <a href="https://github.com/stecuproductions"><Button type="github"/></a>
+                    <a href="https://github.com/JStec0312"><Button type="github"/></a>
                 </div>
             </div>
             <div className="flex-1 flex justify-end">

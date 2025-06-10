@@ -4,7 +4,7 @@ import React from "react";
 </svg>
 // Komponenty przycisków
 const Github = (
-    <a href="https://github.com/stecuproductions" class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-transparent border-secondary border-2 text-secondary px-6 font-medium text-neutral-200 duration-500">
+    <a href="https://github.com/JStec0312" class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-transparent border-secondary border-2 text-secondary px-6 font-medium text-neutral-200 duration-500">
     <div class="relative inline-flex -translate-x-0 items-center transition group-hover:-translate-x-6">
         <div class="absolute translate-x-0 opacity-100 transition group-hover:-translate-x-6 group-hover:opacity-0">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-5 w-5" viewBox="0 0 24 24">
