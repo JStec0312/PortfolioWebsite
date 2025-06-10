@@ -1,3 +1,5 @@
+'use client';
+import { useLanguage } from "../context/LanguageContext";
 const pythonPath="/images/python.png";
 const javascriptPath="/images/js.png";
 const cssPath="/images/css.png";
@@ -7,65 +9,63 @@ const nodePath="/images/node.png";
 const tailwindPath="/images/tailwind.png";
 const postgresPath="/images/postgres.png";
 const figmaPath="/images/figma.png";
-const logos = [
+
+const getLogos = (translations) => [
     {
         src: pythonPath,
         alt: "Python",
-        title: "Python",
-        description: "Python to wysokopoziomowy, interpretowany język programowania, ceniony za czytelność składni i wszechstronność. Wykorzystuję go głównie do tworzenia backendu oraz systemów zarządzania treścią (CMS)."
+        title: translations.logoPythonTitle,
+        description: translations.logoPythonDesc
     },
     {
         src: javascriptPath,
         alt: "JavaScript",
-        title: "JavaScript",
-        description: "JavaScript to dynamiczny język programowania, powszechnie stosowany w tworzeniu interaktywnych elementów na stronach internetowych. Używam go do budowy dynamicznych interfejsów użytkownika."
+        title: translations.logoJSTitle,
+        description: translations.logoJSDesc
     },
     {
         src: cssPath,
         alt: "CSS",
-        title: "CSS",
-        description: "CSS (Cascading Style Sheets) to język stylów używany do opisywania wyglądu dokumentów HTML. Wykorzystuję go do tworzenia estetycznych i responsywnych interfejsów użytkownika."
+        title: translations.logoCSSTitle,
+        description: translations.logoCSSDesc
     },
     {
         src: htmlPath,
         alt: "HTML",
-        title: "HTML",
-        description: "HTML (HyperText Markup Language) to standardowy język znaczników wykorzystywany do tworzenia struktury stron internetowych. Używam go jako podstawy przy projektowaniu aplikacji webowych."
+        title: translations.logoHTMLTitle,
+        description: translations.logoHTMLDesc
     },
     {
         src: reactPath,
         alt: "React",
-        title: "React",
-        description: "React to biblioteka JavaScript służąca do budowy interfejsów użytkownika, szczególnie aplikacji jednostronicowych (SPA). Korzystam z niej do tworzenia nowoczesnych i wydajnych frontów."
+        title: translations.logoReactTitle,
+        description: translations.logoReactDesc
     },
     {
         src: nodePath,
         alt: "Node.js",
-        title: "Node.js",
-        description: "Node.js to środowisko uruchomieniowe JavaScript poza przeglądarką, wykorzystywane do tworzenia backendu. Stosuję je do budowy serwerów oraz API dla aplikacji internetowych."
+        title: translations.logoNodeTitle,
+        description: translations.logoNodeDesc
     },
     {
         src: tailwindPath,
         alt: "Tailwind CSS",
-        title: "Tailwind CSS",
-        description: "Tailwind CSS to framework oparty na klasach narzędziowych, pozwalający na szybkie i elastyczne tworzenie stylów. Wykorzystuję go do projektowania spójnych i nowoczesnych interfejsów."
+        title: translations.logoTailwindTitle,
+        description: translations.logoTailwindDesc
     },
     {
         src: postgresPath,
         alt: "PostgreSQL",
-        title: "PostgreSQL",
-        description: "PostgreSQL to zaawansowany, otwartoźródłowy system zarządzania relacyjnymi bazami danych. Używam go do przechowywania i zarządzania danymi w projektach webowych."
+        title: translations.logoPostgresTitle,
+        description: translations.logoPostgresDesc
     },
     {
         src: figmaPath,
         alt: "Figma",
-        title: "Figma",
-        description: "Figma to przeglądarkowe narzędzie do projektowania UI/UX, umożliwiające współpracę w czasie rzeczywistym. Wykorzystuję je do tworzenia makiet i prototypów interfejsów aplikacji."
+        title: translations.logoFigmaTitle,
+        description: translations.logoFigmaDesc
     }
-    
-
-    
-]
+];
 
 const Logo = ({ src, alt, clickAction }) => {
     return (
@@ -75,5 +75,10 @@ const Logo = ({ src, alt, clickAction }) => {
     );
 }
 
-export {logos};
+// Export a function that gets logos with the current translations
+export const useLogos = () => {
+    const { t } = useLanguage();
+    return getLogos(t);
+};
+
 export default Logo;

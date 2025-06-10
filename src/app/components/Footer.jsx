@@ -1,12 +1,15 @@
 import {Github, Instagram} from "lucide-react";
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   // Navigation links data
   const navigationLinks = [
-    { title: "O mnie", href: "#About" },
-    { title: "Portfolio", href: "#Portfolio" },
-    { title: "Kontakt", href: "#Kontakt" },
+    { title: t.navAbout, href: "#About" },
+    { title: t.navPortfolio, href: "#Portfolio" },
+    { title: t.navContact, href: "#Kontakt" },
   ];
 
   // Services links data
@@ -45,12 +48,10 @@ export default function Footer() {
                 </h3>
                 
               </div>
-              <div className=" md:hidden w-full"></div>
-
-              {/* Navigation section */}
+              <div className=" md:hidden w-full"></div>              {/* Navigation section */}
               <div className="col-span-1  mr-auto">
                 <h3 className="font-body font-semibold text-white text-base leading-none">
-                  Nawigacja
+                  {t.footerNav}
                 </h3>
                 <nav className="mt-4">
                   <ul className="space-y-4">
@@ -70,7 +71,7 @@ export default function Footer() {
             {/* Social media section */}
                 <div className="col-span-1 flex flex-col md:ml-auto mr-auto items-baseline">
                     <h3 className="font-body font-semibold text-white mb-4 text-base leading-none w-fit">
-                    Social Media
+                    {t.footerSocialMedia}
                     </h3>
                     <div>
                     <ul className="space-y-4">
@@ -89,7 +90,7 @@ export default function Footer() {
               {/* Services section */}
               <div className="col-span-1  md:ml-auto">
                 <h3 className="font-body font-semibold text-white text-base leading-none">
-                  Usługi
+                  {t.footerServices}
                 </h3>
                 <div className="mt-4">
                   <ul className="space-y-4">
@@ -104,12 +105,10 @@ export default function Footer() {
                     ))}
                   </ul>
                 </div>
-              </div>
-
-              {/* Newsletter section */}
+              </div>              {/* Newsletter section */}
               <div className="col-span-1 flex md:ml-auto flex-col items-baseline">
                 <h3 className="font-body font-semibold text-white mb-4 text-base leading-none w-fit">
-                    Kontakt
+                    {t.footerContact}
                 </h3>
                 <a href="tel:+48570660663" className=" font-body text-[#888888] text-sm leading-[22.4px] flex w-fit">
                   +48 570 660 663
@@ -134,7 +133,7 @@ export default function Footer() {
             <div className="mt-8 flex flex-col md:flex-row md:justify-between">
               <div className="flex flex-col md:flex-row md:space-x-10 space-y-2 md:space-y-0">
                 <p className="font-['Montserrat-Regular',Helvetica] text-[#888888] text-sm leading-[21px]">
-                  © 2024 Jakub Stec. Wszystkie prawa zastrzeżone.
+                  {t.footerCopyright}
                 </p>
               </div>
               <div className="mt-4 md:mt-0 text-right">
@@ -142,7 +141,7 @@ export default function Footer() {
                   j.stec0312@gmail.com
                 </p>
                 <p className="font-['Montserrat-Regular',Helvetica] text-[#888888] text-sm leading-[21px]">
-                  Pabianice, Polska
+                  {t.footerLocation}
                 </p>
               </div>
             </div>

@@ -1,6 +1,8 @@
 'use client';
 import React from "react";
 import { useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
+
 const envelopeSvg = (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M3 5H21V19H3V5Z" stroke="#D5F60C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -39,18 +41,17 @@ const facebookSvg = (
 
 
 const Contact = () => {
+  const { t } = useLanguage();
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-  });
-
-  return (
+  });  return (
     <section className="text-white justify-center py-4 w-full self-center gap-8 flex flex-col lg:flex-row lg:min-w-[1000px]" id="Kontakt">
       <div className="flex flex-col md:gap-4 lg:justify-between flex-1 gap-4">
           <div>
-            <h2 className="font-header text-h2 leading-[1.3] truncate">Skontaktuj się ze mną</h2>
+            <h2 className="font-header text-h2 leading-[1.3] truncate">{t.contactTitle}</h2>
           </div>
             <div className="flex text-body gap-2">
               {envelopeSvg}
@@ -70,50 +71,49 @@ const Contact = () => {
             </div>
             <div className="flex text-body gap-2">
               {clockSvg}
-              <p className="text-body text-secondary font-bold font-main">Odpowiedź w 24 godziny!</p>
+              <p className="text-body text-secondary font-bold font-main">{t.contactResponse}</p>
             </div>
           </div>      <form className="flex flex-col flex-1 w-full lg:max-w-[700px] items-start gap-4 justify-around" aria-label="Formularz kontaktowy"> 
         <input 
           type="text" 
           name="name"
           id="name"
-          placeholder="Imię" 
+          placeholder={t.contactName}
           className="outline-none leading-0 text-secondary placeholder-secondary border-b-2 border-white w-full pb-1 font-bold"
-          aria-label="Imię" 
+          aria-label={t.contactName}
           required
         />
         <input 
           type="email" 
           name="email"
           id="email"
-          placeholder="Email" 
+          placeholder={t.contactEmail}
           className="outline-none leading-0 text-secondary placeholder-secondary border-b-2 border-white w-full pb-1 font-bold"
-          aria-label="Email"
+          aria-label={t.contactEmail}
           required
         />
         <input 
           type="text" 
           name="subject"
           id="subject"
-          placeholder="Temat" 
+          placeholder={t.contactSubject}
           className="outline-none text-secondary placeholder-secondary border-b-2 border-white font-bold w-full pb-1"
-          aria-label="Temat"
+          aria-label={t.contactSubject}
           required
-        />
-        <textarea 
+        />        <textarea 
           name="message"
           id="message"
-          placeholder="Zostaw wiadomość" 
+          placeholder={t.contactMessage}
           className="outline-none min-h-[130px] text-sm w-full border-2 mt-2 border-white rounded-sm p-2"
-          aria-label="Wiadomość"
+          aria-label={t.contactMessage}
           required
         />
         <button 
           type="submit"
           className="group relative inline-flex h-12 w-full items-center justify-center rounded-md bg-secondary px-6 font-medium text-primary font-body"
-          aria-label="Wyślij wiadomość"
+          aria-label={t.contactSend}
         >
-          <span className='truncate'>Wyślij</span>
+          <span className='truncate'>{t.contactSend}</span>
           <div className="ml-1 -rotate-45 transition-all duration-200 group-hover:rotate-0">
               <svg
                   width="15"
