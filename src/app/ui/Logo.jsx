@@ -69,8 +69,9 @@ const getLogos = (translations) => [
 
 const Logo = ({ src, alt, clickAction }) => {
     return (
-        <button className="flex h-full  ">
+        <button className="flex h-full flex-col gap-2 items-center   ">
             <img src={src} onClick={clickAction} alt={alt} className=" h-20 w-20 md:h-25 md:w-25 lg:h-30 lg:w-30 hover:scale-110 transition 0.3s all"  />
+            <span className=" text-2xl font-medium font-header text-white">{alt}</span>
         </button>
     );
 }

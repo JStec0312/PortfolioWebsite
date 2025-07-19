@@ -32,7 +32,7 @@ const Portfolio = () => {
         
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-8">
                 {projects.map((project, i) => (
-                <div key={i} className="bg-white/5 shadow-secondary backdrop-blur-sm rounded-xl shadow-xl md:shadow-xl group overflow-hidden">
+                <div key={i} className="bg-white/5 shadow-secondary  backdrop-blur-sm rounded-xl shadow-2xl  group overflow-hidden">
                 <picture className="block overflow-hidden">
                   <img 
                     src={project.img} 
@@ -44,7 +44,7 @@ const Portfolio = () => {
                 <div className="p-4">
                   <h3 className="text-2xl font-semibold mb-2 font-header text-[#D5F60C]">{project.title}</h3>
                   <p className="font-main text-md">{project.description}</p>
-                  <a href={project.link} className="inline-block font-main mt-4 text-sm text-[#D5F60C] underline cursor-pointer hover:text-white">
+                  <a href={project.link} target="_blank" className="inline-block font-main mt-4 text-sm text-[#D5F60C] underline cursor-pointer hover:text-white">
                     {t.viewProject}
                   </a>
                 </div>

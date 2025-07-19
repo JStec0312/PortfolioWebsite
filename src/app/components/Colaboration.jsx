@@ -43,45 +43,48 @@ export default function InteractiveMap() {
         {t.collaborationTitle}
       </h2>
 
-      <div className="flex justify-between gap-2 flex-nowrap md:gap-4">
-        {steps.map((step, index) => (
-          <button
-            key={step.id}
-            onClick={() => setActiveStep(index)}
-            className={`font-header border-2 px-2 md:px-4 py-2 rounded-md text-sm md:text-2xl lg:text-4xl w-full transition-all ${
-              activeStep === index
-                ? "text-black bg-secondary border-secondary"
-                : "text-white border-white hover:bg-white/10"
-            }`}
+      <div className="flex flex-col md:flex-row  gap-16 md:gap-32 max-h-1/2 w-full  md:justify-between md:items-between ">
+        <div className="flex md: flex-col md:w-1/2 justify-between gap-2  flex-nowrap md:gap-4">
+          {steps.map((step, index) => (
+            <button
+              key={step.id}
+              onClick={() => setActiveStep(index)}
+              className={`font-header border-2 px-2 md:px-4 py-2 rounded-md text-lg md:text-2xl lg:text-4xl md:w-3/4  transition-all ${
+                activeStep === index
+                  ? "text-black bg-secondary border-secondary"
+                  : "text-white border-white hover:bg-white/10"
+              }`}
+            >
+              {step.label}
+            </button>
+          ))}
+        </div>
+        <AnimatePresence mode="wait" >
+          <motion.div
+            key={steps[activeStep].id}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.3 }}
+            className="flex flex-col items-center  md:w-1/2   justify-around gap-4   text-center "
           >
-            {step.label}
-          </button>
-        ))}
+            <div className="flex flex-col gap-4  md:h-full">
+              <p className="text-h3 text-white font-semibold font-header leading-none">
+                {steps[activeStep].title}
+              </p>
+              <p className="text-body lg:text-2xl text-white/70 max-w-xl font-body mt-">
+                {steps[activeStep].desc}
+              </p>
+            </div>
+            <img
+              src={steps[activeStep].image}
+              alt={steps[activeStep].title}
+              className="object-contain aspect-video min-w-none rounded-lg lg:h-full h-[200px] md:max-h-[350px] "
+              loading="eager"
+            />
+          </motion.div>
+        </AnimatePresence>
       </div>
-
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={steps[activeStep].id}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.3 }}
-          className="flex flex-col items-center gap-4 mt-8 text-center"
-        >
-          <p className="text-h3 text-white font-semibold font-header leading-none">
-            {steps[activeStep].title}
-          </p>
-          <p className="text-body lg:text-2xl text-white/70 max-w-xl font-body mt-">
-            {steps[activeStep].desc}
-          </p>
-          <img
-            src={steps[activeStep].image}
-            alt={steps[activeStep].title}
-            className="aspect-video min-w-none w-full max-w-[400px] md:min-w-[600px] lg:min-w-[800px] object-contain"
-            loading="eager"
-          />
-        </motion.div>
-      </AnimatePresence>
     </section>
   )
 }

@@ -105,7 +105,7 @@ export default function Footer() {
                     ))}
                   </ul>
                 </div>
-              </div>              {/* Newsletter section */}
+              </div>              
               <div className="col-span-1 flex md:ml-auto flex-col items-baseline">
                 <h3 className="font-body font-semibold text-white mb-4 text-base leading-none w-fit">
                     {t.footerContact}
@@ -113,7 +113,7 @@ export default function Footer() {
                 <a href="tel:+48570660663" className=" font-body text-[#888888] text-sm leading-[22.4px] flex w-fit">
                   +48 570 660 663
                 </a>
-                <a href="mailto:j.stec0312@gmail.com" className=" font-body text-[#888888] text-sm leading-[22.4px] flex w-fit">
+                <a href="mailto:j.stec0312@gmail.com" className=" font-body text-[#888888] mt-4 text-sm leading-[22.4px] flex w-fit">
                     j.stec0312@gmail.com
                 </a>
                 <div className="mt-6 space-y-3">

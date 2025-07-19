@@ -52,6 +52,7 @@ const About = () => {
                                 description={logo.description}
                                 justing={thisJusting}
                                 clickAction={() => handleLogoClick(logo.title, logo.description)}
+                                
                             />
                         );
                     })}

@@ -13,7 +13,7 @@ export default function PageLoader({ show = true }) {
     }
 
     const int = setInterval(() => {
-      setProgress((p) => (p < 95 ? p + (100 - p) * 0.05 : p));
+      setProgress((p) => (p < 95 ? p + (100 - p) * 0.5 : p));
     }, 120);
 
     return () => clearInterval(int);
